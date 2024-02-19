@@ -1,66 +1,53 @@
-# No active development
-This project is no longer in active development by the BitCrackers team. Therefore all issues created will be ignored or closed.
+# Нет активной разработки
+Этот проект больше не находится в активной разработке командой BitCrackers. Поэтому все созданные проблемы будут проигнорированы или закрыты.
 
-# AmongUsMenu [![Discord](https://img.shields.io/badge/Discord-Invite-7289DA.svg?logo=Discord&style=flat-square)](https://discord.gg/AUpXd3VUh8) [![Paypal](https://img.shields.io/badge/PayPal-Donate-Green.svg?logo=Paypal&style=flat-square)](https://www.paypal.com/donate/?hosted_button_id=TYMU92FD9D9UW)
-
+# AmongUsMenu 
 <p align="center">
-   AmongUsMenu is a Cheat Menu for the popular Game Among Us.
+ AmongUsMenu - это чит-меню для популярной среди нас игры.
 </p>
 
-## Disclaimer
-This project is for Educational Use only. We do not condone this software being used to gain an advantage against other people. I made this project for my university project to show how cheating software works and how it is possible to block these manipulations in the future.
+## Отказ от ответственности
+Этот проект предназначен только для образовательных целей. Мы не одобряем использование этого программного обеспечения для получения преимущества над другими людьми. Я создал этот проект для своего университетского проекта, чтобы показать, как работает мошенническое программное обеспечение и как можно заблокировать эти манипуляции в будущем.
 
-## Compile (Configurations)
-You can compile two different versions of the menu. Normal or Version Proxy.
+## Компиляции (Конфигурации)
+Вы можете собрать две разные варианты меню. Нормальный или версии прокси-сервера.
 
-### Normal (AmongUsMenu.dll)
-Inject it with any injector you have.
+### Нормальные (AmongUsMenu.dll)
+Смешать ее с любым инжектор у вас есть.
 
-- Debug (With Debug Information and can be attached to process)
-- Release (Optimized with all information stripped)
+- Отладка (с отладочной информацией и могут быть присоединены к процессу)
+- Выпуск (оптимизирован всю информацию раздели)
 
-### Version Proxy (version.dll)
-Will automatically be loaded by the Game itself if the dll is in the game directory.
+### Версии Прокси (version.dll)
+Автоматически загружается сама игра, если DLL находится в директории игры.
 
-- Debug_Version (With Debug Information and can be attached to process)
-- Release_Version (Optimized with all information stripped)
+- Debug_Version (с отладочной информацией и могут быть присоединены к процессу)
+- Release_Version (оптимизирован всю информацию раздели)
 
-### Running on Proton (Version Proxy Only)
-First you will need protontricks, you can install it with your packager of choice.
+### Запуск на "Протоне" (версия только прокси-сервер)
+Сначала вам потребуется protontricks, вы можете установить его с вашими упаковщик выбора.
 
-1. Make sure you are running Among Us under Proton  
-   You can check by going to **Properties -> Compatibility**
-3. Put version.dll into Among Us folder
-4. Run `protontricks --gui`
-5. Choose **Among Us**
-6. Click on **Select the default wineprefix** and then **OK**
-7. Click on **Run winecfg** and then **OK**
-8. In the configuration window, click on **Libraries**
-9. Type `version` into the **New override for library** input
-10. Click **Add** and then **Apply**
-11. AmongUsMenu should now work properly in the game
+1. Убедитесь, что вы используете у нас под "Протон"
+Вы можете проверить, перейдя в **свойства -> совместимость**
+3. Поставить version.dll в папке среди нас
+4. Запустите `protontricks --графический интерфейс
+5. Выбрать **Между Нами**
+6. Нажмите на **выберите default wineprefix** и **ОК**
+7. Нажмите на **Запустить winecfg** и **ОК**
+8. В окно Настройки, Нажмите кнопку на **библиотеки**
+9. Тип "версия" в **новый переопределить для библиотечных** вход
+10. Нажмите кнопку **Добавить** и **применение**
+11. AmongUsMenu теперь должна работать должным образом в игре
 
-### Default Hotkeys
-- Show Menu - DELETE
-- Show Radar - INSERT
-- Show Console - HOME
-- Show Replay - END
-- Repair Sabotage - PAGE DOWN (PgDn)
+### Горячие Клавиши По Умолчанию
+- Посмотреть меню - Удалить
+- Показать радар - вставка
+- Показать консоль дому
+- Показать анализировать - конец
+- Ремонт диверсионно - на страницу вниз (клавиша PgDn)
 
 ## Screenshot
 <p align="center">
    <img src="screenshot.png">
 </p>
 
-## Special Thanks
-* [KulaGGin](https://github.com/KulaGGin) (Helped with some ImGui code for replay system)
-* [tomsa000](https://github.com/tomsa000) (Helped with fixing memory leaks and smart pointers)
-* Everyone else who contributed to the code and I couldn't list here. Thank you!
-
-## Contributing
-
-1. Fork it (<https://github.com/BitCrackers/AmongUsMenu/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
